@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.clock {
+  position: relative;
+
+  box-sizing: border-box;
+
+  width: 250px;
+  text-align: center;
+  left: 1%;
+  top: 70px;
+  color: #000;
+}
+
+.clock h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.nameDisplay {
+  position: absolute;
+  display: inline-block;
+  left: 3.5%;
+  top: 150px;
+}
+.nameDisplay input {
+  width: 200px;
+  height: 40px;
+  border: 2px solid black;
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.nameDisplay h4 {
+  font-size: 30px;
+
+  transition: 0.5s;
+  transform: translate(5px, -15px);
+}
+
+.form,
+.greeting {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.toDoDisplay {
+  border-radius: 5px;
+  position: absolute;
+  left: 2.5%;
+  top: 45%;
+  width: 270px;
+  height: 80px;
+  text-align: center;
+  padding: 10px;
+}
+
+.toDoDisplay input {
+  padding: 5px;
+  width: 250px;
+  height: 30px;
+  border: 2px solid black;
+  font-size: 20px;
+  border-radius: 5px;
+  outline-style: none;
+}
+.toDoDisplay ul {
+  transform: translate(350px, -170px);
+  list-style: none;
+  font-size: 25px;
+  line-height: 10px;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+.toDoDisplay button:hover {
+  transform: scale(1.1);
+  border: none;
+}
+.toDoDisplay li {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #000;
+  color: green;
+  padding: 5px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body {
+  background-color: darkgray;
+}
+.bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  animation: fadeIn 0.5s linear;
+}
+
+.weather {
+  position: absolute;
+  left: 5%;
+  bottom: 8%;
+  color: lightgray;
+  font-size: 26px;
+}
